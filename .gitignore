@@ -1,15 +1,56 @@
-# Rendered videos, build intermediates and AI clips stay local.
+# ---------------------------------------------------------------- project
+# Rendered videos, contact sheets, caption files and build intermediates.
 output/*
 !output/.gitkeep
+# AI-generated clips you download (can be large, and may have usage terms).
 clips/*
 !clips/.gitkeep
+# Font files: most fonts can't be redistributed, so keep yours local.
+assets/fonts/*
+!assets/fonts/.gitkeep
+# Stray media from testing outside output/.
+*.mp4
+*.mov
+*.m4a
+*.wav
 
-# Secrets and environments
+# ---------------------------------------------------------------- secrets
+# Local settings and API keys. .env.example is the committed template.
 .env
-.venv/
+.env.*
+!.env.example
 
-# Python clutter
+# ---------------------------------------------------------------- Python
 __pycache__/
 *.py[cod]
 *.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test, lint and type-check caches
 .pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+
+# ---------------------------------------------------------------- editors & OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
