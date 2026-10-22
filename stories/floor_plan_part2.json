@@ -1,0 +1,69 @@
+{
+  "title": "The Floor Plan, Part 2: Inches",
+  "fps": 30,
+  "size": "1080x1920",
+  "duration": 30,
+
+  "caption": {
+    "hook": "I slept on the couch. (Part 2/4. Headphones on.)",
+    "hashtags": ["#horror", "#scarystories", "#creepy", "#horrorstory", "#analoghorror"]
+  },
+
+  "segments": [
+    { "type": "static_text", "duration": 3, "background": "dark", "fade_in": 0.5, "glitch": 0.1,
+      "lines": [ { "text": "Every night, a new plan.", "start": 0.3 } ] },
+
+    { "type": "spectrogram", "duration": 6, "reveal": 4.5,
+      "plan": { "bedroom": 0.846, "label": "9'7\"", "outline": "bed" },
+      "lines": [ { "text": "9 feet 7.", "start": 1.0 },
+                 { "text": "The nightstand is touching the wall.", "start": 2.6 } ] },
+
+    { "type": "static_text", "duration": 4, "background": "dark", "glitch": 0.1,
+      "lines": [ { "text": "Now there's an outline on the plans.", "start": 0.4 },
+                 { "text": "Someone lying in my bed.", "start": 2.0 } ] },
+
+    { "type": "static_text", "duration": 3, "background": "dark", "glitch": 0.1,
+      "lines": [ { "text": "The wallpaper is warm.", "start": 0.3 } ] },
+
+    { "type": "static_text", "duration": 4, "background": "dark", "glitch": 0.05,
+      "lines": [ { "text": "So I slept on the couch.", "start": 0.4 } ] },
+
+    { "type": "static_text", "duration": 4, "background": "black", "glitch": 0.6,
+      "lines": [ { "text": "I woke up in my bed.", "start": 0.1 } ] },
+
+    { "type": "static_text", "duration": 3, "background": "dark", "glitch": 0.2,
+      "lines": [ { "text": "Exactly where the outline was.", "start": 0.3 } ] },
+
+    { "type": "end_card", "duration": 3,
+      "lines": [ { "text": "3 feet 2.", "start": 0.2 },
+                 { "text": "My bed is 3 feet wide.", "start": 0.9 } ],
+      "handle": "@static.in.the.walls  ·  2/4", "handle_start": 2.0 }
+  ],
+
+  "audio_cues": [
+    { "type": "room", "start": 0, "end": 16, "size": 0.4, "gain": 0.2 },
+    { "type": "drone", "start": 0, "end": 16, "gain": 0.3 },
+
+    { "type": "hiss", "start": 0.2, "end": 9.0, "gain": 0.3, "pan": -0.8 },
+    { "type": "drawtones", "start": 3.2, "end": 8.8, "gain": 0.3, "pan": -0.6 },
+    { "type": "grind", "start": 4.5, "end": 9.0, "gain": 0.3, "pan": -0.8 },
+    { "type": "creak", "times": [5.6, 7.7], "gain": 0.6, "pan": -0.7 },
+
+    { "type": "silence", "start": 9.0, "end": 9.8 },
+    { "type": "breathing", "start": 10.2, "end": 16.0, "gain": 0.2, "gain_to": 0.55, "pan": -0.8, "period": 4.2 },
+    { "type": "heartbeat", "times": [13.3, 14.3, 15.2], "gain": 0.7 },
+
+    { "type": "room", "start": 16, "end": 20, "size": 0.9, "gain": 0.3 },
+    { "type": "tick", "start": 16, "end": 20, "gain": 0.3, "pan": 0.3 },
+
+    { "type": "bedsprings", "times": [20.05], "gain": 0.9, "pan": -0.3 },
+    { "type": "sub", "times": [20.05], "gain": 0.9 },
+    { "type": "room", "start": 20, "end": 30, "size": 0.25, "gain": 0.25 },
+    { "type": "drone", "start": 20, "end": 27.5, "gain": 0.3 },
+    { "type": "breathing", "start": 20.6, "end": 25.0, "gain": 0.55, "pan": -0.5, "period": 3.8 },
+    { "type": "heartbeat", "times": [21.0, 21.8, 22.6, 23.4], "gain": 0.7 },
+
+    { "type": "snap", "times": [27.15], "gain": 0.9 },
+    { "type": "silence", "start": 27.5, "end": 30 }
+  ]
+}

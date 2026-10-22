@@ -1,0 +1,15 @@
+# Rendered videos, build intermediates and AI clips stay local.
+output/*
+!output/.gitkeep
+clips/*
+!clips/.gitkeep
+
+# Secrets and environments
+.env
+.venv/
+
+# Python clutter
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/

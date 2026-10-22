@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "staticreels"
+version = "0.1.0"
+description = "Story JSON + AI clips -> vertical horror Reels, with code-made static, text and sound."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "Pillow>=10.0",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+staticreels = "staticreels.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

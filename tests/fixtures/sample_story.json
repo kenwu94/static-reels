@@ -1,0 +1,91 @@
+{
+  "title": "Static in the Walls",
+  "fps": 30,
+  "size": "1080x1920",
+  "duration": 30,
+  "voiceover": null,
+  "font": null,
+
+  "caption": {
+    "hook": "I've been hearing static in my walls. Last night, I recorded it. (Sound on.)",
+    "hashtags": ["#horror", "#analoghorror", "#foundfootage", "#scarystories", "#creepy"]
+  },
+
+  "segments": [
+    {
+      "type": "static_text",
+      "duration": 3,
+      "fade_in": 1.2,
+      "glitch": 0.15,
+      "lines": [
+        { "text": "I've been hearing static in my walls.", "start": 0.3 },
+        { "text": "Last night, I recorded it.", "start": 1.7 }
+      ]
+    },
+    {
+      "type": "ai_clip",
+      "duration": 5,
+      "clip": "clip1.mp4",
+      "prompt": "Found-footage phone video, night, dark bedroom, handheld camera slowly panning across the room toward a bare wall, flickering blue-white glow from an off-screen TV, heavy film grain, low light, unsettling stillness, no people, vertical 9:16.",
+      "overlay": { "rec_dot": true, "timestamp": "3:07 AM" }
+    },
+    {
+      "type": "static_text",
+      "duration": 4,
+      "glitch": 0.85,
+      "lines": [
+        { "text": "Nothing on the recording but hiss.", "start": 0.2 },
+        { "text": "Until I slowed it down.", "start": 1.8 }
+      ]
+    },
+    {
+      "type": "ai_clip",
+      "duration": 5,
+      "clip": "clip2.mp4",
+      "prompt": "Extreme close-up of old peeling floral wallpaper in dim light, surface subtly pulsing as if something breathes behind it, drifting dust, faint flicker, grainy phone footage, slow push-in, no people, vertical 9:16.",
+      "overlay": { "rec_dot": true, "timestamp": "3:09 AM" }
+    },
+    {
+      "type": "countdown",
+      "duration": 4,
+      "digits": [5, 4, 3, 2, 1],
+      "glitch": 0.5,
+      "lines": [
+        { "text": "It was counting backwards.", "start": 0.1 }
+      ]
+    },
+    {
+      "type": "ai_clip",
+      "duration": 5,
+      "clip": "clip3.mp4",
+      "prompt": "Long narrow apartment hallway at night, bedroom door slightly ajar, a tall dark shadowy silhouette barely visible at the far end, flickering light, handheld phone footage, slow zoom, heavy grain, shape never clearly in focus, vertical 9:16.",
+      "overlay": { "rec_dot": true, "timestamp": "3:14 AM" },
+      "cut_to_black": 0.5
+    },
+    {
+      "type": "end_card",
+      "duration": 4,
+      "glitch": 0.1,
+      "lines": [
+        { "text": "It stopped at zero.", "start": 0.2 },
+        { "text": "The knocking came from my side of the door.", "start": 1.2 }
+      ],
+      "handle": "@static.in.the.walls",
+      "handle_start": 3.0
+    }
+  ],
+
+  "audio_cues": [
+    { "type": "drone", "start": 0, "end": 30, "gain": 0.55 },
+    { "type": "hiss", "start": 0, "end": 3, "gain": 0.25, "gain_to": 0.3 },
+    { "type": "hiss", "start": 8, "end": 12, "gain": 0.25, "gain_to": 0.35 },
+    { "type": "hiss", "start": 17, "end": 21, "gain": 0.1, "gain_to": 1.0 },
+    {
+      "type": "heartbeat",
+      "gain": 0.9,
+      "times": [12.4, 13.5, 14.5, 15.4, 16.2, 16.9, 17.5, 18.1, 18.6, 19.1, 19.6, 20.1, 20.6, 21.6, 22.6, 23.5, 24.3, 25.0]
+    },
+    { "type": "silence", "start": 25.5, "end": 26.4 },
+    { "type": "knock", "gain": 1.0, "times": [27.2, 27.85, 28.5] }
+  ]
+}

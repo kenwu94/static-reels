@@ -1,0 +1,5 @@
+numpy>=1.26
+Pillow>=10.0
+python-dotenv>=1.0
+# Installs this project itself (editable) so the `staticreels` command exists.
+-e .

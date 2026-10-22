@@ -1,0 +1,75 @@
+{
+  "title": "The Floor Plan, Part 3: Narrow",
+  "fps": 30,
+  "size": "1080x1920",
+  "duration": 30,
+
+  "caption": {
+    "hook": "I tied my wrist to the couch. (Part 3/4. Headphones on.)",
+    "hashtags": ["#horror", "#scarystories", "#creepy", "#horrorstory", "#analoghorror"]
+  },
+
+  "segments": [
+    { "type": "static_text", "duration": 3, "background": "dark", "fade_in": 0.5, "glitch": 0.05,
+      "lines": [ { "text": "I tied my wrist to the couch.", "start": 0.2 },
+                 { "text": "3:07.", "start": 1.8 } ] },
+
+    { "type": "static_text", "duration": 4, "background": "dark", "glitch": 0.3,
+      "lines": [ { "text": "The hiss started.", "start": 0.2 },
+                 { "text": "Then the grinding.", "start": 1.6 } ] },
+
+    { "type": "countdown", "duration": 4, "digits": ["2'6\"", "2'0\"", "1'8\""], "glitch": 0.6,
+      "lines": [ { "text": "It was going faster.", "start": 0.1 } ] },
+
+    { "type": "static_text", "duration": 4, "background": "black", "glitch": 0.3,
+      "lines": [ { "text": "I woke up in the bedroom.", "start": 0.3 },
+                 { "text": "The rope was tied to the bed frame.", "start": 1.6 } ] },
+
+    { "type": "static_text", "duration": 4, "background": "dark", "glitch": 0.2,
+      "lines": [ { "text": "Both walls were touching the bed.", "start": 0.3 } ] },
+
+    { "type": "static_text", "duration": 4, "background": "dark", "glitch": 0.2,
+      "lines": [ { "text": "Something pressed my hand through the wallpaper.", "start": 0.2 },
+                 { "text": "It was warm. It had fingers.", "start": 2.3 } ] },
+
+    { "type": "static_text", "duration": 4, "background": "static", "glitch": 0.8,
+      "lines": [ { "text": "I got out sideways.", "start": 0.2 } ] },
+
+    { "type": "end_card", "duration": 3,
+      "lines": [ { "text": "Behind me, the doorway closed.", "start": 0.2 } ],
+      "handle": "@static.in.the.walls  ·  3/4", "handle_start": 2.0 }
+  ],
+
+  "audio_cues": [
+    { "type": "room", "start": 0, "end": 7, "size": 0.9, "gain": 0.3 },
+    { "type": "tick", "start": 0, "end": 7, "gain": 0.4, "pan": 0.3 },
+
+    { "type": "drone", "start": 3, "end": 11, "gain": 0.25 },
+    { "type": "hiss", "start": 3.2, "end": 11.0, "gain": 0.3, "gain_to": 0.65, "pan": -0.8 },
+    { "type": "grind", "start": 4.6, "end": 11.0, "gain": 0.3, "gain_to": 0.85, "pan": -0.8 },
+    { "type": "riser", "start": 7.0, "end": 11.0, "gain": 0.5 },
+    { "type": "snap", "times": [7.0, 8.33, 9.67], "gain": 0.8 },
+    { "type": "creak", "times": [7.05, 8.4, 9.7], "gain": 0.5, "pan": -0.8 },
+    { "type": "heartbeat", "times": [7.2, 7.8, 8.35, 8.85, 9.3, 9.7, 10.05, 10.4, 10.7], "gain": 0.8 },
+
+    { "type": "silence", "start": 11.0, "end": 11.8 },
+    { "type": "room", "start": 11, "end": 27, "size": 0.05, "gain": 0.15 },
+    { "type": "breathing", "start": 11.9, "end": 19.0, "gain": 0.8, "pan": 0.1, "period": 3.6 },
+
+    { "type": "grind", "start": 15.0, "end": 19.0, "gain": 0.25, "pan": -0.9 },
+    { "type": "grind", "start": 15.0, "end": 19.0, "gain": 0.25, "pan": 0.9 },
+    { "type": "creak", "times": [15.4, 17.1], "gain": 0.6, "pan": -0.9 },
+    { "type": "creak", "times": [16.3, 17.9], "gain": 0.6, "pan": 0.9 },
+    { "type": "muffle", "start": 15.0, "end": 19.0, "cutoff": 1800 },
+
+    { "type": "paper", "start": 19.2, "end": 22.8, "gain": 1.3, "pan": -0.2 },
+
+    { "type": "panic", "start": 23.0, "end": 27.0, "gain": 0.5 },
+    { "type": "grind", "start": 23.1, "end": 24.6, "gain": 0.7, "pan": -0.5 },
+    { "type": "heartbeat", "times": [23.1, 23.5, 23.9, 24.3, 24.7, 25.1, 25.5, 25.9, 26.3], "gain": 0.8 },
+
+    { "type": "grind", "start": 27.2, "end": 29.0, "gain": 0.6, "pan": -0.8 },
+    { "type": "thud", "times": [29.0], "gain": 1.0, "pan": -0.4 },
+    { "type": "silence", "start": 29.25, "end": 30 }
+  ]
+}

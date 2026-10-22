@@ -1,0 +1,66 @@
+{
+  "title": "The Floor Plan, Part 4: Original Plan",
+  "fps": 30,
+  "size": "1080x1920",
+  "duration": 30,
+
+  "caption": {
+    "hook": "The original blueprint. (Part 4/4. Headphones on.)",
+    "hashtags": ["#horror", "#scarystories", "#creepy", "#horrorstory", "#analoghorror"]
+  },
+
+  "segments": [
+    { "type": "static_text", "duration": 3, "background": "dark", "fade_in": 0.5, "glitch": 0.05,
+      "lines": [ { "text": "In the morning,", "start": 0.2 },
+                 { "text": "my bedroom door opened onto a wall.", "start": 0.9 } ] },
+
+    { "type": "static_text", "duration": 4, "background": "dark", "glitch": 0.05,
+      "lines": [ { "text": "Flat. Papered.", "start": 0.2 },
+                 { "text": "Four inches deep.", "start": 1.2 } ] },
+
+    { "type": "static_text", "duration": 3, "background": "dark", "glitch": 0.05,
+      "lines": [ { "text": "The 1926 blueprint says my unit was a studio.", "start": 0.2 } ] },
+
+    { "type": "blueprint", "duration": 6,
+      "plan": { "bedroom": 0.0, "outline": "wall" },
+      "lines": [ { "text": "Same lines as the last plan.", "start": 0.4 },
+                 { "text": "Same outline, inside the west wall.", "start": 2.0 } ] },
+
+    { "type": "blueprint", "duration": 4,
+      "plan": { "bedroom": 0.0, "outline": "wall" },
+      "pencil": "TENANT", "pencil_start": 1.8,
+      "lines": [ { "text": "Labeled in pencil:", "start": 0.3 },
+                 { "text": "TENANT.", "start": 1.8 } ] },
+
+    { "type": "static_text", "duration": 4, "background": "dark", "glitch": 0.1,
+      "lines": [ { "text": "It was never missing a bedroom.", "start": 0.3 } ] },
+
+    { "type": "static_text", "duration": 3, "background": "black", "glitch": 0.3,
+      "lines": [ { "text": "It was missing a tenant.", "start": 0.3 } ] },
+
+    { "type": "end_card", "duration": 3,
+      "lines": [ { "text": "The unit is listed again.", "start": 0.1 },
+                 { "text": "Quiet. Cozy. Studio.", "start": 1.1 } ],
+      "handle": "@static.in.the.walls  ·  4/4", "handle_start": 2.2 }
+  ],
+
+  "audio_cues": [
+    { "type": "day", "start": 0, "end": 7, "gain": 0.35 },
+    { "type": "room", "start": 0, "end": 3, "size": 0.7, "gain": 0.15 },
+
+    { "type": "room", "start": 3, "end": 7, "size": 0.0, "gain": 0.1 },
+    { "type": "paper", "start": 3.3, "end": 5.8, "gain": 0.3, "pan": -0.4 },
+
+    { "type": "room", "start": 7, "end": 16, "size": 0.7, "gain": 0.2 },
+    { "type": "paper", "start": 7.2, "end": 8.4, "gain": 0.35, "pan": 0.3 },
+    { "type": "hiss", "start": 10.5, "end": 16.0, "gain": 0.12, "pan": -0.8 },
+    { "type": "drawtones", "start": 10.5, "end": 16.0, "gain": 0.25, "pan": -0.6 },
+
+    { "type": "silence", "start": 16.0, "end": 17.6 },
+    { "type": "sub", "times": [17.8], "gain": 1.0 },
+
+    { "type": "drone", "start": 18, "end": 30, "gain": 0.3 },
+    { "type": "breathing", "start": 20.2, "end": 25.0, "gain": 0.15, "gain_to": 0.25, "pan": -0.85, "period": 4.6 },
+    { "type": "hiss", "start": 27.0, "end": 30.0, "gain": 0.1, "gain_to": 0.9, "pan": -0.8 }
+  ]
+}
